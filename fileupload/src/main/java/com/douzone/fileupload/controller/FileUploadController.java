@@ -24,7 +24,7 @@ public class FileUploadController {
 	@RequestMapping(value="/upload", method=RequestMethod.POST)
 	public String upload(@RequestParam(value="email", required=true, defaultValue="") String email,
 						@RequestParam(value="file") MultipartFile multipartFile,
-						Model model) {
+						Model model) throws Exception {
 		System.out.println("email:" + email);
 		
 		String url = fileUploadService.restore(multipartFile);
