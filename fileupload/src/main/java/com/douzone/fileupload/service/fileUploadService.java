@@ -38,6 +38,7 @@ public class fileUploadService {
 			os.close();
 			
 			url = URL_BASE + "/" + saveFilename;
+			System.out.println(url);
 			
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("file upload error:" + e);

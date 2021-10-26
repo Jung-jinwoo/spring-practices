@@ -13,9 +13,20 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context 
 	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/board/**"/>
+			<bean class="com.douzone.hellospring.interceptor.MyInterceptor01"></bean>
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/guestbook/**"/>
+			<bean class="com.douzone.hellospring.interceptor.MyInterceptor2"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.douzone.logx.controller" />
+	<context:component-scan base-package="com.douzone.hellospring.controller" />
 		
 	
 </beans>

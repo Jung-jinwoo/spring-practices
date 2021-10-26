@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GuestbookController {
 	
 	@ResponseBody
-	@RequestMapping
+	@RequestMapping("/list")
 	public String list() {
 		return "GuestbookController.list()";
 	}
 	
 	@ResponseBody
-	@RequestMapping
+	@RequestMapping("/delete")
 	public String delete() {
 		return "GuestbookController.delete()";
 	}
