@@ -7,7 +7,6 @@ import com.douzone.container.user.User;
 
 @Configuration
 public class AppConfig02 {
-	
 	@Bean
 	public User user() {
 		return new User();
