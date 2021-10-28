@@ -14,8 +14,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.douzone.container.soundsystem.CDPlayer;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes= {CDPlayerConfig.class})
-public class CDPlayerjavaConfigTest {
+@ContextConfiguration(classes={CDPlayerConfig.class})
+public class CDPlayerJavaConfigTest {
 	@Rule
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	

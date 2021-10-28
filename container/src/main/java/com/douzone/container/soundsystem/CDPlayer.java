@@ -5,11 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CDPlayer {
-	
+
 	@Autowired
-	private CompactDisc cd;
+	private CompactDisct cd;
 	
 	public void play() {
 		cd.play();
 	}
+
 }

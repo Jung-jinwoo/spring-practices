@@ -16,7 +16,6 @@ import com.douzone.container.soundsystem.CDPlayer;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:com/douzone/container/config/soundsystem/CDPlayerConfig.xml"})
 public class CDPlayerXmlConfigTest {
-	
 	@Rule
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	
